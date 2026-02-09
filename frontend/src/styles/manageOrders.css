@@ -1,0 +1,74 @@
+.manage-orders-container {
+    background-color: #f4f6f9; 
+    min-height: 100vh; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manage-orders-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.manage-orders-container table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.manage-orders-container th {
+    background-color: #36cddb;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.manage-orders-container td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.manage-orders-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.manage-orders-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 13px;
+    width: 70px;
+    margin-right: 8px;
+}
+
+.manage-orders-container button:hover {
+    background-color: #0f780d;
+}
+
+.manage-orders-container button:last-child {
+    background-color: #e74c3c;
+    margin-right: 0;
+}
+
+.manage-orders-container button:last-child:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .manage-orders-container table {
+        width: 100%;
+        font-size: 14px;
+    }
+}

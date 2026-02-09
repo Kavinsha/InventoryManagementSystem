@@ -16,6 +16,7 @@
     text-align: center;
     font-size: 22px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .sidebar nav {
@@ -37,14 +38,14 @@
 }
 
 .main-content {
-    margin-left: 250px; /* Matches Sidebar Width */
+    margin-left: 250px; 
     padding: 20px;
     width: calc(100% - 250px);
     min-height: 100vh;
     background: #F4F6F7;
 }
 
-/* Responsive Sidebar */
+
 @media (max-width: 768px) {
     .sidebar {
         width: 200px;

@@ -1,4 +1,4 @@
-.manage-products-container {
+.manage-vendors-container {
     background-color: #f4f6f9; 
     min-height: 100vh; 
     padding: 20px;
@@ -14,7 +14,7 @@ h2 {
     font-weight: bold;
 }
 
-.product-table {
+.manage-vendors-container table {
     width: 90%;
     max-width: 1200px;
     border-collapse: collapse;
@@ -24,25 +24,23 @@ h2 {
     overflow: hidden;
 }
 
-
-.product-table th {
+.manage-vendors-container th {
     background-color: #36cddb;
     color: white;
     padding: 12px;
     text-align: left;
 }
 
-
-.product-table td {
+.manage-vendors-container td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 
-.product-table tr:nth-child(even) {
+.manage-vendors-container tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-.update-btn {
+.manage-vendors-container button {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -55,23 +53,16 @@ h2 {
     margin-right: 8px;
 }
 
-.update-btn:hover {
+.manage-vendors-container button:hover {
     background-color: #0f780d;
 }
 
-.delete-btn {
+.manage-vendors-container button:last-child {
     background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 6px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 13px;
-    width: 70px;
+    margin-right: 0;
 }
 
-.delete-btn:hover {
+.manage-vendors-container button:last-child:hover {
     background-color: #c0392b;
 }
 
@@ -100,99 +91,54 @@ h2 {
 }
 
 /* Modal Header */
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.modal-content h3 {
+    margin: 0;
     padding: 20px;
-    border-bottom: 1px solid #ddd;
     background-color: #36cddb;
     color: white;
     border-radius: 10px 10px 0 0;
-}
-
-.modal-header h3 {
-    margin: 0;
     font-size: 20px;
 }
 
-
 /* Modal Body */
-.modal-body {
-    padding: 20px;
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
+.modal-content input {
     display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.form-group input,
-.form-group textarea,
-.form-group select {
-    width: 100%;
+    width: 85%;
     padding: 10px;
+    margin: 12px auto;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
+.modal-content input:focus {
     outline: none;
     border-color: #36cddb;
     box-shadow: 0 0 5px rgba(54, 205, 219, 0.3);
 }
 
 /* Modal Footer */
-.modal-footer {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    padding: 20px;
-    border-top: 1px solid #ddd;
+.modal-content button {
+    display: inline-block;
+    margin: 10px 5px;
+    width: auto;
 }
 
-.modal-cancel-btn {
-    background-color: #95a5a6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.modal-cancel-btn:hover {
-    background-color: #7f8c8d;
-}
-
-.modal-ok-btn {
+.modal-content button:first-of-type {
     background-color: #36cddb;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: 0.3s;
 }
 
-.modal-ok-btn:hover {
+.modal-content button:first-of-type:hover {
     background-color: #1abc9c;
+}
+
+.modal-content button:last-of-type {
+    background-color: #95a5a6;
+}
+
+.modal-content button:last-of-type:hover {
+    background-color: #7f8c8d;
 }
 
 /* Confirmation Dialog */
@@ -257,11 +203,11 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-    .product-table {
+    .manage-vendors-container table {
         width: 100%;
         font-size: 14px;
     }
-    .delete-btn {
+    .manage-vendors-container button {
         padding: 6px 10px;
     }
     .modal-content {
