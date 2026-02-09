@@ -11,7 +11,7 @@ const express = require("express");
 
     // Middleware
     app.use(cors());
-    app.use(express.json()); // Allows JSON data parsing
+    app.use(express.json()); 
 
     // MongoDB Connection
     mongoose.connect("mongodb://127.0.0.1:27017/stockDB", {

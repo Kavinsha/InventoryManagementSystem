@@ -25,11 +25,11 @@ export default function AddVendor() {
     <div className="add-vendor-container">
       <h2>Add Vendor</h2>
       <form onSubmit={submit}>
-        <input name="name" value={form.name} onChange={change} placeholder="Name" required/>
-        <input name="email" value={form.email} onChange={change} placeholder="Email"/>
-        <input name="contact" value={form.contact} onChange={change} placeholder="Contact"/>
-        <input name="location" value={form.location} onChange={change} placeholder="Location"/>
-        <button type="submit" disabled={loading}>{loading ? "Saving..." : "Add Vendor"}</button>
+        <p>Vendor Name:</p><input name="name" value={form.name} onChange={change} placeholder="Name" required/>
+        <p>Vendor email:</p><input name="email" value={form.email} onChange={change} placeholder="Email"/>
+        <p>Vendor contact:</p><input name="contact" value={form.contact} onChange={change} placeholder="Contact"/>
+        <p>Vendor location:</p><input name="location" value={form.location} onChange={change} placeholder="Location"/>
+        <button type="submit" disabled={loading}>{loading ? "Saving..." : "+ Add Vendor"}</button>
       </form>
     </div>
   );

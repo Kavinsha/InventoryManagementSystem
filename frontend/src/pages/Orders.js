@@ -20,7 +20,7 @@ export default function Orders() {
     try {
       await axios.post("http://localhost:5000/api/orders/add", form);
       toast.success("Order created successfully!");
-      setForm({ vendor: "", product: "", quantity: 1 });
+      setForm({ vendor: "", product: "", quantity: 0 });
     } catch (err) {
       toast.error(err.response?.data?.msg || err.message);
     }
@@ -37,10 +37,10 @@ export default function Orders() {
 
         <select name="product" value={form.product} onChange={change} required>
           <option value="">Select product</option>
-          {products.map(p => <option key={p._id} value={p._id}>{p.name} — ${p.price}</option>)}
+          {products.map(p => <option key={p._id} value={p._id}>{p.name} - ₹{p.price}</option>)}
         </select>
 
-        <input name="quantity" type="number" min="1" value={form.quantity} onChange={change} required/>
+        <input name="quantity" type="number" min="0" value={form.quantity} onChange={change} required/>
         <button type="submit">Allocate</button>
       </form>
     </div>

@@ -28,7 +28,7 @@ const Dashboard = () => {
                 setTotalProducts(products.length);
 
                 // Count unique categories
-                const uniqueCategories = new Set(products.map(product => product.category));
+                const uniqueCategories = new Set(products.map(product => product.category.toLowerCase().trim()));
                 setTotalCategories(uniqueCategories.size);
 
                 // Calculate total inventory value (price * quantity)

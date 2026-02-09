@@ -1,10 +1,15 @@
 import { NavLink } from "react-router-dom";
 import "../styles/sidebar.css";
+import logo from "../assets/logo.png";
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
-            <h2>Trackit</h2>
+            <div className="logo">
+                <img src={logo} alt="Trackit logo" />
+                <h2>Trackit</h2>
+            </div>
+            
             <nav>
                 <NavLink to="/dashboard" end className={({ isActive }) => isActive ? "active" : ""}>Dashboard</NavLink>
                 <NavLink to="/dashboard/view-products" className={({ isActive }) => isActive ? "active" : ""}>View Products</NavLink>

@@ -1,5 +1,5 @@
 import Sidebar from "./Sidebar";
-import "../styles/dashboardLayout.css"; // Ensure styling is applied
+import "../styles/dashboardLayout.css"; 
 
 const DashboardLayout = ({ children }) => {
     return (

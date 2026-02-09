@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-/* Custom Toast Styling */
+/*toast styling */
 .Toastify__toast {
   display: flex;
   align-items: center;

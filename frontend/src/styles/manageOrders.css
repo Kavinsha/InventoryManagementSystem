@@ -41,7 +41,7 @@
 }
 
 .manage-orders-container button {
-    background-color: #4CAF50;
+    background-color: #00a6ff;
     color: white;
     border: none;
     padding: 6px 10px;
@@ -58,12 +58,43 @@
 }
 
 .manage-orders-container button:last-child {
-    background-color: #e74c3c;
+    background-color:  #00a6ff;
     margin-right: 0;
+    width: 50%;
 }
 
 .manage-orders-container button:last-child:hover {
-    background-color: #c0392b;
+    background-color: #0f780d;
+}
+
+.status-btn {
+  background-color: #e74c3c; 
+  color: #fff;
+  border: none;
+  padding: 8px 1px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 8px;
+  width: 100%;
+  transition: background-color 180ms ease, transform 120ms ease;
+}
+
+.status-btn:hover { transform: translateY(-2px); }
+
+
+.status-btn.paid{
+  background-color: #4CAF50;
+}
+
+.status-btn.delivery.delivered {
+  background-color: #4CAF50;
+}
+
+
+.status-btn.small {
+  padding: 6px 10px;
+  font-size: 13px;
 }
 
 @media (max-width: 768px) {
@@ -71,4 +102,8 @@
         width: 100%;
         font-size: 14px;
     }
+}
+
+@media (max-width: 600px) {
+  .status-btn { margin-bottom: 6px; display: inline-block; width: 48%; }
 }

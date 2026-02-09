@@ -14,7 +14,7 @@
 
 .sidebar h2 {
     text-align: center;
-    font-size: 22px;
+    font-size: 42px;
     margin-bottom: 20px;
     color: white;
 }
@@ -66,4 +66,20 @@
         margin-left: 0;
         width: 100%;
     }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+}
+.logo img {
+  width: 65px;
+  object-fit: contain;
+  display: block;
+}
+.brand h2 {
+  margin: 0;
+  font-size: 18px;
 }
